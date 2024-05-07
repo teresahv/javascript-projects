@@ -1,5 +1,6 @@
 # Javascript projects
 The main objective of this project is to show the skills of using javascript
+
 ## Table of Contents
   1. Color palette
   2. Counter
@@ -18,4 +19,5 @@ The main objective of this project is to show the skills of using javascript
   15. Slider
 
 ** D E M O **
+---
 ![Prject: Our Menu](https://i.pinimg.com/originals/65/28/6f/65286fe51164c280e35ac2f877d00cbf.jpg)
