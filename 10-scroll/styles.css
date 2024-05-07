@@ -1,0 +1,299 @@
+    /*
+==> Fonts <==
+*/
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+/*
+==> Variables <==
+*/
+
+:root {
+  /* Color palette */
+  --clr-primary-1: #EE9A86;
+  --clr-primary-2: #49E3AB;
+  --clr-primary-3: #9E91F9;
+  --clr-primary-4: #F8D472;
+  --clr-primary-5: #FBEFD0;
+  --clr-black: #222;
+  --clr-grey: #595457;
+  --clr-white: #fff;
+  --font-primary: 'Comfortaa', cursive;
+  --font-secondary: 'Amaranth', sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: .5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+/*
+==> Global Styles <==
+*/
+html {
+    scroll-behavior: smooth;
+  }
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-primary);
+  background: var(--clr-primary-5);
+  color: var(--clr-primary-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+  ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  img:not(.logo) {
+    width: 100%;
+  }
+  img {
+    display: block;
+  }
+  h1 {
+    font-size: 3.6rem;
+    font-family: var(--font-secondary);
+    color: var(--clr-primary-1);
+    text-transform: capitalize;
+    text-align: center;
+  }
+  h2 {
+      font-size: 2rem;
+      font-family: var(--font-primary);
+      color: var(--clr-primary-3);
+      text-transform: capitalize;
+      line-height: 1;
+      padding: 2.4rem 0;
+  }
+  
+  .btn-white {
+    text-transform: uppercase;
+    font-family: var(--font-secondary);
+    color: var(--clr-white);
+    border-color: var(--clr-white);
+    border-radius: var(--radius);
+    padding: 0.6rem 2rem;
+    display: inline-block;
+    transition: var(--transition);
+    border: 2px solid var(--clr-white);
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  .btn:hover {
+    background: var(--clr-white);
+    color: var(--clr-primary-1);
+  }
+  .section {
+    padding-bottom: 5rem;
+  }
+ 
+ /*
+==> S C R O L L <==
+*/
+nav {
+    background: var(--clr-white);
+    padding: 1rem 1.5rem;
+  }
+  /* fixed nav */
+  .fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--clr-white);
+    box-shadow: var(--dark-shadow);
+  }
+  .fixed-nav .links a {
+    color: var(--clr-primary-1);
+  }
+  .fixed-nav .links a:hover {
+    color: var(--clr-primary-3);
+  }
+  /* .fixed-nav .links-container {
+    height: auto !important;
+  } */
+  .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-toggle {
+    font-size: 1.5rem;
+    color: var(--clr-primary-1);
+    background: transparent;
+    border-color: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  .nav-toggle:hover {
+    color: var(--clr-primary-3);
+  }
+  .logo {
+    height: 50px;
+  }
+  .links-container {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+  }
+  .show-links {
+    height: 200px;
+  }
+  .links a {
+    background: var(--clr-white);
+    color: var(--clr-primary-3);
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    display: block;
+    transition: var(--transition);
+    font-weight: bold;
+    padding: 0.8rem 0;
+  }
+  .links a:hover {
+    color: var(--clr-primary-1);
+  }
+  /*
+==> M E D I A - Q U E R I E S <==
+*/
+@media screen and (min-width: 800px) {
+    nav {
+      background: transparent;
+    }
+    .nav-center {
+      width: 90vw;
+      max-width: 1170px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-header {
+      padding: 0;
+    }
+    .nav-toggle {
+      display: none;
+    }
+    .links-container {
+      height: auto !important;
+    }
+    .links {
+      display: flex;
+    }
+    .links a {
+      background: transparent;
+      color: var(--clr-white);
+      font-size: 1.2rem;
+      text-transform: capitalize;
+      letter-spacing: var(--spacing);
+      display: block;
+      transition: var(--transition);
+      margin: 0 1rem;
+      font-weight: bold;
+      padding: 0;
+    }
+    .links a:hover {
+      color: var(--clr-primary-1);
+      text-shadow: 0px 0px 2px var(--clr-white);
+      font-size: 1.4rem;
+    }
+  }
+  /* hero */
+  header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+      url(./4.png) center/cover no-repeat;
+  }
+  .banner {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+  }
+  .container h1 {
+    color: var(--clr-white);
+    text-transform: uppercase;
+  }
+  .container p {
+    font-size: .9rem;
+    color: var(--clr-white);
+    max-width: 25rem;
+    margin: 0 auto;
+    margin-bottom: 1.25rem;
+  }
+  @media screen and (min-width: 768px) {
+    .container p {
+      max-width: 40rem;
+    }
+  }
+  /* sections and title */
+  .title h2 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .title span {
+    color: var(--clr-primary-1);
+  }
+  #about,
+  #services,
+  #tours {
+    height: 80vh;
+  }
+  #services {
+    background: var(--clr-white);
+  }
+  footer {
+    background: var(--clr-primary-3);
+    padding: 5rem 1rem;
+  }
+  footer p {
+    font-family: var(--font-primary);
+    color: var(--clr-white);
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    margin-bottom: 0;
+  }
+  
+  .top-link {
+    font-size: 1.25rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    background: var(--clr-primary-1);
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: var(--radius);
+    color: var(--clr-white);
+    animation: bounce 2s ease-in-out infinite;
+    visibility: hidden;
+    z-index: -100;
+  }
+  .show-link {
+    visibility: visible;
+    z-index: 100;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <!-- F O N T S -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+/>
+
+        <!-- S T Y L E S -->
+        <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="menu">
+        <!-- Title -->
+        <div class="title">
+            <h1>our menu</h1>
+            <div class="underline"></div>
+        </div>
+        <!-- Filter Buttons -->
+        <div class="btn-container">
+         <button type="button" class="filter-btn" data-id="all">
+             all
+        </button>
+        <button type="button" class="filter-btn" data-id="breakfast">
+          breakfast
+        </button>
+        <button type="button" class="filter-btn" data-id="lunch">
+            lunch
+        </button>
+        <button type="button" class="filter-btn" data-id="shakes">
+          shakes
+        </button>
+        </div>
+        <!-- Menu Items -->
+        <div class="section-center">
+            <!-- START Single ITEM -->
+            <article class="menu-item">
+                <img src="./imagesMeal/Breakfast-01.jpg" alt="menu item" class="photo">
+                <div class="item-info">
+                    <header>
+                        <h4>black coffee</h4>
+                        <h4 class="price">$3</h4>
+                    </header>
+                    <p class="item-text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Quam, voluptate dicta repudiandae impedit aspernatur cupiditate maxime doloremque tenetur voluptas minima! 
+                        Natus amet fugit dolorum odio totam velit libero corrupti quia!
+                    </p>
+                </div>
+            </article>
+            <!-- END Single Item -->
+        </div>
+    </section>
+    <!-- J S -->
+    <script src="app.js"></script>
+</body>
+</html>

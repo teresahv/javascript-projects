@@ -1,0 +1,144 @@
+/*
+==> Fonts <==
+*/
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+/*
+==> Variables <==
+*/
+
+:root {
+  /* Color palette */
+  --clr-primary-1: #EE9A86;
+  --clr-primary-2: #49E3AB;
+  --clr-primary-3: #9E91F9;
+  --clr-primary-4: #F8D472;
+  --clr-primary-5: #FBEFD0;
+  --clr-black: #222;
+  --clr-grey: #595457;
+  --clr-white: #fff;
+  --font-primary: 'Comfortaa', cursive;
+  --font-secondary: 'Amaranth', sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: .5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+/*
+==> Global Styles <==
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-primary);
+  background: var(--clr-primary-5);
+  color: var(--clr-primary-1);
+  font-size: 0.875rem;
+}
+  h1 {
+    font-size: 4rem;
+    font-family: var(--font-secondary);
+    color: var(--clr-primary-1);
+    text-transform: capitalize;
+    text-align: center;
+  }
+ 
+ 
+ /*
+==> V I D E O <==
+*/
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--clr-primary-5);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    z-index: 999;
+    transition: var(--transition);
+  }
+  .hide-preloader {
+    z-index: -999;
+    visibility: hidden;
+  }
+  
+  header {
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    place-items: center;
+  }
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+  }
+  /* switch button */
+  
+  .switch-btn {
+    position: absolute;
+    bottom: 7%;
+    left: 7%;
+    width: 7rem;
+    height: 2rem;
+    display: flex;
+    border-radius: var(--radius);
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    transition: var(--transition);
+  }
+  .switch-btn span {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-family: var(--font-primary);
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: var(--clr-primary-3);
+  }
+  .switch {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--clr-primary-1);
+    border-radius: var(--radius);
+    margin: 0;
+    display: block;
+    transition: var(--transition);
+  }
+  .slider .switch {
+    left: 50%;
+  }
+  /* header after */
+  header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+  }
+
+  
+ 
