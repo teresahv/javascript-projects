@@ -1,7 +1,7 @@
 # Javascript projects
 The main objective of this project is to show the skills of using javascript
 
-## Table of Contents
+## P R O J E C T S
   1. Color palette
   2. Counter
   3. Review project
@@ -21,3 +21,9 @@ The main objective of this project is to show the skills of using javascript
 ** D E M O **
 ---
 ![Prject: Our Menu](https://i.pinimg.com/originals/65/28/6f/65286fe51164c280e35ac2f877d00cbf.jpg)
+
+
+## License:
+    This project is licensed under the MIT License
+
+** Made by: teresahv **
